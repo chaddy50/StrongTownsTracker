@@ -54,7 +54,7 @@ async function findRecentEventWithApprovedMinutes(): Promise<LegistarEvent> {
   return mostRecentEventWithApprovedMinutes;
 }
 
-async function fetchEventItems(eventId: number): Promise<LegistarEventItem[]> {
+function fetchEventItems(eventId: number): Promise<LegistarEventItem[]> {
   return fetchFromLegistar<LegistarEventItem[]>(
     `/Events/${eventId}/EventItems?AgendaNote=true&MinutesNote=true`,
   );

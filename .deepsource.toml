@@ -1,0 +1,15 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  environment = ["nodejs"]
+  module = true
+  dialect = "typescript"
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "secrets"
